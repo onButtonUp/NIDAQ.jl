@@ -152,7 +152,8 @@ function _getproperties(args, suffix::String, warning::Bool)
             catch
                 settable=false
             end
-            ret_val[string(cfunction)[15+length(suffix):end]] = (data, settable)
+            # ret_val[string(cfunction)[15+length(suffix):end]] = (data, settable)
+            ret_val[string(cfunction)[9+length(suffix):end]] = (data, settable)
         end
     end
     ret_val
@@ -214,3 +215,5 @@ function setproperty!(t::Task, channel::String, property::String, value)
     catch_error(ret, "DAQmxSet$kind$property: ")
     nothing
 end
+
+doThisIt() = "There you go . . ."
