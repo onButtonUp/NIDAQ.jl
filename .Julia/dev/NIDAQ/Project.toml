@@ -1,2 +1,2 @@
 [deps]
-NIDAQ = "66b72792-1abf-55ab-8064-6e9051317175"
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
